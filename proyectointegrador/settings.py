@@ -76,11 +76,14 @@ WSGI_APPLICATION = 'proyectointegrador.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'proyectointegrador',  # Nombre de la base de datos
+        'USER': 'Jose Miguel',       # Nombre del usuario
+        'PASSWORD': 'JMmf1996',  # La contraseña del usuario
+        'HOST': 'localhost',         # Usamos localhost si PostgreSQL está en la misma máquina
+        'PORT': '5432',              # Puerto por defecto de PostgreSQL
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
